@@ -1,4 +1,4 @@
-require 'kaminari/helpers/action_view_extension'
+require 'kaminari/actionview/action_view_extension'
 
 module KaminariRoutePrefix
   module ActionViewExtension
