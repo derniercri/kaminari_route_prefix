@@ -7,7 +7,7 @@ module KaminariRoutePrefix
     end
 
     def page_url_for_route_set(page)
-      @route_set.url_for @params.merge(@param_name => (page <= 1 ? nil : page), only_path: true)
+      @route_set.url_for @params.merge(@param_name => (page <= 1 ? nil : page), only_path: true).symbolize_keys
     end
   end
 end
